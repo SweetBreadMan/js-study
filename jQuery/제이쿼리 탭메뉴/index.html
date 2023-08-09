@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제이쿼리 탭메뉴</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tab Menu with <b>jQuery</b></h1>
+    <div class="tab-pics">
+      <img src="images/profile-01.jpg" data-tab="tab1" class="active">
+      <img src="images/profile-02.jpg" data-tab="tab2">
+      <img src="images/profile-03.jpg" data-tab="tab3">
+      <img src="images/profile-04.jpg" data-tab="tab4">
+    </div>
+    <div class="tabs">
+      <div class="tab-content active" id="tab1">
+        <h3>James, Football Player</h3>
+        <p>
+          A football player or footballer is a sportsperson who plays one of the different types of football. The main types of football are association football, American football, Canadian football, Australian rules football, Gaelic football, rugby league, and rugby union.<br>
+          It has been estimated that there are 250 million association football players in the world,[1] and many play the other forms of football.
+        </p>
+      </div>
+      <div class="tab-content" id="tab2">
+        <h3>Amy, Web Designer</h3>
+        <p>
+          Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design (UI design); authoring, including standardised code and proprietary software; user experience design (UX design); and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all.
+        </p>
+      </div>
+      <div class="tab-content" id="tab3">
+        <h3>Hayden, Journalist</h3>
+        <p>
+          A journalist is an individual that collects/gathers information in form of text, audio, or pictures, processes them into a news-worthy form, and disseminates it to the public. The act or process mainly done by the journalist is called journalism.<br>
+          Journalists can be broadcast, print, advertising, and public relations personnel, and, depending on the form of journalism.
+        </p>
+      </div>
+      <div class="tab-content" id="tab4">
+        <h3>Oliver, Hairdresser</h3>
+        <p>
+          A hairdresser is a person whose occupation is to cut or style hair in order to change or maintain a person's image. This is achieved using a combination of hair coloring, haircutting, and hair texturing techniques. A Hairdresser may also be referred to as a 'barber' or 'hairstylist.'<br>
+          Some hairstylists specialize in particular services, such as colorists, who specialize in coloring hair.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.tab-pics img').click(function(){
+      var tabAttr = $(this).attr('data-tab');
+      console.log(tabAttr);
+      $(this).addClass('active');
+      $(this).siblings().removeClass('active');
+
+      $('.tab-content').removeClass('active');
+      $('#' + tabAttr).addClass('active');
+    })
+  </script>
+</body>
+</html>

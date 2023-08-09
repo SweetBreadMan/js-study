@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클릭시 크게 보이는 이미지 갤러리</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>click to enlarge the thumbnail image</h1>
+  <div class="gallery">
+    <div class="main-image">
+      <img src="images/photo-01.jpg">
+    </div>
+    <div class="thum-wrapper">
+      <div class="thum">
+        <img class="active" src="images/photo-01.jpg">
+      </div>
+      <div class="thum">
+        <img src="images/photo-02.jpg">
+      </div>
+      <div class="thum">
+        <img src="images/photo-03.jpg">
+      </div>
+      <div class="thum">
+        <img src="images/photo-04.jpg">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.thum img').click(function(){
+      var src = $(this).attr('src');
+
+      $(this).addClass('active');
+      $(this).parent().siblings().children().removeClass('active');
+      $('.main-image img').attr('src', src);
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #A6CFE2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  text-transform: capitalize;
+}
+.gallery {
+  width: 960px;
+}
+.main-image {
+  border: 5px solid #fff;
+  margin-bottom: 5px;
+}
+.main-image img {
+  width: 100%;
+  display: block;
+}
+.thum-wrapper {
+  display: flex;
+  gap: 5px;
+}
+.thum {
+  border: 5px solid #fff;
+  flex: 1;
+  cursor: pointer;
+}
+.thum img {
+  width: 100%;
+  display: block;
+  opacity: 0.3;
+  transition: 0.2s;
+}
+.thum img.active {
+  opacity: 1;
+}
+.thum:hover img {
+  opacity: 1;
+}

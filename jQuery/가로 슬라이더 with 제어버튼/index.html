@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가로 슬라이더</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Custom CSS & jQuery -->
+  <link rel="stylesheet" href="style.css">
+  <script src="custom.js"></script>
+</head>
+<body>
+  <h1>Slider With Autoplay Control</h1>
+  <div class="slider">
+    <!-- Control Button -->
+    <div class="control prev">
+      <i class="bi bi-chevron-left"></i>
+    </div>
+    <div class="control next">
+      <i class="bi bi-chevron-right"></i>
+    </div>
+    <!-- Autoplay Control -->
+    <label for="toggle">
+      <input type="checkbox" id="toggle"><em></em>Autoplay
+    </label>
+    <!-- Slider Contents -->
+    <div class="slider-items">
+      <div class="slider-item">
+        <img src="images/slide-01.jpg">
+      </div>
+      <div class="slider-item">
+        <img src="images/slide-02.jpg">
+      </div>
+      <div class="slider-item">
+        <img src="images/slide-03.jpg">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

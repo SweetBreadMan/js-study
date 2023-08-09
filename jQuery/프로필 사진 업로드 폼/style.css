@@ -1,0 +1,105 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #cafcfc;
+}
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.container {
+  width: 900px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.heading {
+  border-bottom: 1px solid #ccc;
+}
+.heading h2 {
+  margin-bottom: 40px;
+}
+.user-wrapper {
+  padding: 40px 0;
+  display: flex;
+  gap: 80px;
+}
+.profile-photo {
+  margin-bottom: 20px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-photo img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.photo-select,
+.remove-photo {
+  display: block;
+  width: 170px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+  background-color: #fff;
+  color: #3F56EA;
+  border: 1px solid #3F56EA;
+  font-weight: 600;
+  padding: 3px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+}
+.photo-select:hover,
+.remove-photo:hover {
+  background-color: #3F56EA;
+  color: #fff;
+}
+input[type=file] {
+  display: none;
+}
+.user-info {
+  margin-bottom: 30px;
+}
+.user-info b {
+  display: inline-block;
+  width: 100px;
+}
+.agree {
+  margin-bottom: 50px;
+}
+.agree b {
+  display: inline-block;
+  width: 100px;
+}
+.agree label {
+  margin-left: -3px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+button[type=button] {
+  background-color: #3F56EA;
+  color: #fff;
+  padding: 12px 80px;
+  border-radius: 7px;
+  transition: .2s;
+  float: right;
+}
+button[type='button']:hover {
+  background-color: #5266e6;
+}

@@ -1,0 +1,33 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #61BFAD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.text {
+  font-size: 8em;
+  color: #fff;
+  user-select: none;
+}
+.cursor {
+  background-color: #cf3636;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: .1s;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+/* Cursor Hover */
+.text:hover + .cursor {
+  transform: scale(7);
+}

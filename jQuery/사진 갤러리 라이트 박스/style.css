@@ -1,0 +1,58 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+/* Custom CSS */
+.gallery-content {
+  width: 800px;
+}
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.gallery a {
+  width: 33%;
+}
+.gallery a img {
+  width: 100%;
+}
+.lightbox-overlay {
+  position: fixed;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.35s;
+}
+.lightbox-overlay span {
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+.lightbox-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,65 @@
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #3b3a3b;
+  color: gainsboro;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: gainsboro;
+}
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.inner {
+  width: 700px;
+}
+.inner h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+.faq-title {
+  background-color: #312F31;
+  padding: 10px;
+  margin-bottom: 2px;
+  position: relative;
+  cursor: pointer;
+}
+.faq-title::after {
+  content: '\e9c5';
+  font-family: xeicon;
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  font-size: 23px;
+  transition: .3s;
+}
+.faq-title.active::after {
+  transform: rotate(45deg);
+}
+.faq-title:hover {
+  background-color: #C11119;
+}
+.faq-title.active {
+  background-color: #C11119;
+}
+.faq-content {
+  background-color: #312F31;
+  padding: 10px;
+  margin-bottom: 5px;
+  display: none;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch Light & Dark</title>
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="switch"></div>
+  <div class="container">
+    <div class="text-field">
+      <h1>Light Mode & Dark Mode</h1>
+      <p>
+        Light mode is characterized by a bright and refreshing design, utilizing white or light-colored backgrounds to provide a visually vibrant experience. This mode is commonly used during the day and features crisp typography and excellent readability, ensuring clear presentation of content.<br><br>
+        Dark mode, on the other hand, consists of a dark background with bright text, offering a modern and sophisticated feel while avoiding strain on the eyes. It is primarily used during nighttime or in dimly lit environments, providing a visually comfortable environment even with low light or weak lighting conditions. Additionally, dark mode reduces energy consumption, enhances screen uniformity, and helps reduce eye fatigue.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    $('.switch').click(function () {
+      $('body').toggleClass('dark');
+      $('.switch').toggleClass('active');
+    })
+  </script>
+</body>
+</html>

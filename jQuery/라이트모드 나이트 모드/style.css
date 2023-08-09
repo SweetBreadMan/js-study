@@ -1,0 +1,71 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fafafa;
+  color: #333;
+  transition: .2s;
+}
+body.dark {
+  background-color: #1e272e;
+  color: #fff;
+}
+.switch {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 100px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #000;
+  cursor: pointer;
+}
+.switch::before,
+.switch::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transition: .3s;
+}
+.switch::before {
+  border-radius: 50%;
+  background-color: #fff;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.switch::after {
+  content: '\F1D1';
+  font-family: bootstrap-icons;
+  color: #F97F51;
+  font-size: 30px;
+  top: 60%;
+  transform: translateY(-50%);
+  right: 3px;
+}
+.switch.active::before {
+  left: calc(100% - 40px - 5px);
+}
+.switch.active::after {
+  content: '\F495';
+  right: 45%;
+  color: #fed330;
+}
+.text-field {
+  width: 900px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+.container h1 {
+  font-weight: 600;
+  letter-spacing: 4px;
+}

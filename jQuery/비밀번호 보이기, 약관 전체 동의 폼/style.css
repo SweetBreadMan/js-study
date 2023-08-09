@@ -1,0 +1,259 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/* Bootstrap Icons CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #dfe6e9;
+  margin: 0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 38px;
+  margin: 0;
+}
+h3 {
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: #999;
+}
+button {
+  outline: none;
+  cursor: pointer;
+}
+.container {
+  padding: 50px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  width: 700px;
+  padding: 50px 60px;
+}
+form > div {
+  width: 100%;
+  margin: 20px 0;
+}
+/* Common CSS */
+.info-inner {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.info-title {
+  flex: 1;
+}
+.info-title b {
+  font-weight: normal;
+}
+.input-field {
+  flex: 4;
+  margin: 8px 0;
+  position: relative;
+}
+input[type=text],
+input[type=password],
+input[type=tel] {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #cdcdcd;
+  color: #333;
+  font-size: 15px;
+  height: 50px;
+  transition: .2s;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=tel]:focus {
+  border-bottom: 1px solid #3090D6;
+}
+.input-field .bi {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #8e8e8e;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Member Info */
+.tab-btns {
+  flex: 4;
+  display: flex;
+  gap: 5px;
+}
+.tab-btn {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #cdcdcd;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+  transition: .3s
+}
+.tab-btn:hover {
+  background-color: #3091d654;
+}
+.tab-btn.active {
+  background-color: #3090D6;
+  color: #fff;
+  border-color: transparent;
+}
+.personal-tab,
+.company-tab {
+  display: none;
+}
+.personal-tab.active,
+.company-tab.active {
+  display: block;
+}
+.input-field-inner {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-btn {
+  border: 1px solid #cdcdcd;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 8px 0;
+  width: 100px;
+  font-size: 16px;
+  margin-left: 20px;
+  transition: .3s;
+}
+.input-btn:hover {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid transparent;
+}
+.email-field {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+.email-address-field {
+  margin-left: auto;
+  flex: 2;
+}
+.email-address {
+  padding-left: 10px;
+}
+/* Custom Select CSS */
+.select-inner {
+  width: 100px;
+  position: relative;
+  margin-left: 20px;
+  border: 1px solid #cdcdcd;
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+}
+.select-title {
+  position: relative;
+  padding: 8px 6px;
+}
+.select-title:after {
+  content: '\F282';
+  font-family: bootstrap-icons;
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+  font-size: 14px;
+}
+.select-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 2em;
+  width: 100%;
+  border-top: none;
+  border: 1px solid #cdcdcd;
+  display: none;
+}
+.select-items li {
+  padding: 0 6px;
+}
+
+/* Agree CSS */
+.agree-items {
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+.agree-all {
+  padding-bottom: 10px;
+}
+.agree-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.agree-item label {
+  cursor: pointer;
+  user-select: none;
+}
+.agree-item label b {
+  font-weight: 500;
+}
+input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  position: relative;
+  transform: translateY(3px);
+}
+.agree-item a {
+  font-size: 12px;
+}
+.agree-item label span em {
+  color: #3090D6;
+  font-style: normal;
+}
+.agree-item:last-child label span em {
+  color: #999;
+}
+.agree-wrap > span {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Join Button */
+.join-btn {
+  width: 100%;
+  color: #fff;
+  border: none;
+  background-color: #3090D6;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: .3s;
+}
+.join-btn:hover {
+  background-color: #297ebb;
+}
