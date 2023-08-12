@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    var num = 1;
+
+    // 메세지 출력
+    function showTime() {
+      console.log(`로그인 상태가 ${num++}초 지났습니다`);
+      if(num > 5) {
+        clearInterval(timeOut);
+        alert('자동 로그아웃 되었습니다.');
+      }
+    }
+    var timeOut = setInterval(showTime, 1000);
+    // setInterval(showTime, 1000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+    // var 변수 선언
+    var user = 'lee';
+    console.log(user);
+
+    // 재선언이 가능
+    var user = 'kim';
+    console.log(user);
+
+    // let 변수 선언
+    let user2 = 'kang';
+    console.log(user2);
+    // let은 값을 변경(초기화)는 가능하지만 같은 이름으로 변수 선언 불가
+    // let user2 = 'park';
+    user2 = 'park';
+    console.log(user2);
+
+    // const 변수 선언
+    const user3 = 'jung';
+    console.log(user3);
+
+    // const는 상수로 변수 선언을 다시 할 수 없음
+    // const user3 = 'lim';
+    user3 = 'lim';
+
+
+    // 변수 이름 규칙
+    // 대소문자 구분
+    var userPassword;
+    // 숫자는 처음에 올 수 없음
+    var test1;
+    // var 1test;
+
+    // 특문을 사용할 경우 _ 와 $ 만 가능
+    var _test;
+    var $test;
+
+    // 공백 포함 불가
+    // var t est;
+
+    // 키워드를 변수로 사용할 수 없음
+    var alert = 66;
+    console.log(alert);
+  </script>
+</body>
+</html>

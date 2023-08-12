@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+    var age = prompt('나이 입력');
+    // if(age >= 20) {
+    //   alert('성인입니다.')
+    // } else {
+    //   alert('미성년입니다.');
+    // }
+
+    // 위의 if문과 동일함
+    age >= 20 ? alert('성인입니다.') : alert('미성년입니다.');
+
+    // 다중 if문 단축
+    var scoreResult = prompt('점수 입력');
+    (scoreResult >= 90) ? alert('A학점') : (scoreResult >= 80) ? alert('B학점') : (scoreResult >=70) ? alert('C학점') : alert('F 학점');
+  </script>
+</body>
+</html>

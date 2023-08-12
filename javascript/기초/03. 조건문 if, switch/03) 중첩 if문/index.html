@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+    var examScore = prompt('0~100 정수 입력');
+
+    // 60점 미만이라면 '불합격', 60~100점이라면 '합격'
+    if(examScore >= 0 && examScore <= 100) {
+      if(examScore >= 60) {
+        alert('합격');
+      } else {
+        alert('불합격');
+      }
+    } else {
+      alert('0~100 의 정수를 입력해주세요.')
+    }
+
+    // 홀수 짝수 체크
+    var num = prompt('홀짝 체크');
+    // 나머지 값이 1이면 홀수
+    if(num % 2 == 1) {
+      alert('홀수');
+      // 나머지 값이 0이면 짝수
+    } else if (num % 2 == 0) {
+      alert('짝수');
+    } else {
+      alert('정수를 입력하세요.');
+    }
+  </script>
+</body>
+</html>

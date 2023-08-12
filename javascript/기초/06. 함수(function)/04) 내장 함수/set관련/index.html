@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    /* 내장 함수는 자바스크립트가 미리 만들어 놓은 함수로 호출만 해서 사용하는 함수 */
+
+    // setTimeout() : 지정된 시간이 지난 후 한번 실행하는 함수
+    // setTimeout(콜백함수 , 시간, 인수);
+    // 콜백함수란 다른 함수가 실행을 끝낸 뒤 실행되는 함수를 말함
+
+    // setInterval() : 지정된 시간마다 계속 실행하는 함수
+    // setInterval(콜백함수 , 시간, 인수);
+
+    // clearTimeout() : setTimeout() 함수를 중지시키는 함수
+    // clearInterval() : setInterval() 함수를 중지시키는 함수
+
+    // 2초 지난 후 body에 텍스트 출력하기
+    setTimeout(function(){
+      document.write('2초가 지났습니다.<br>')
+    }, 2000);
+
+    function showMsg(msg) {
+      document.write(msg);
+    }
+
+    setTimeout(showMsg, 5000, '5초가 지났습니다.');
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button value="에스프레소" onclick="order(this.value)">에스프레소</button>
+  <button value="아메리카노" onclick="order(this.value)">아메리카노</button>
+  <button value="카페라떼" onclick="order(this.value)">카페라떼</button>
+  <button value="바닐라라떼" onclick="order(this.value)">바닐라라떼</button>
+  <button value="카라멜마끼아또" class="test">카라멜마끼아또</button>
+
+  <script>
+    /* 함수(function)를 선언하는 부분과 호출하는 부분의 매개(연결고리)가 되는 변수이며, 파라미터(parameter)라고도 부름 */
+    /* function 함수이름(e) {
+      실행할 코드 집합(code block)
+    } */
+    // 괄호 안의 e가 매개 변수
+
+
+    function order(menu) {
+      alert(menu + ' 주문이 완료되었습니다.');
+    }
+
+    var test = document.querySelector('.test');
+    test.addEventListener('click', function(e){
+      var value = this.getAttribute('value');
+      order(value);
+    })
+  </script>
+</body>
+</html>

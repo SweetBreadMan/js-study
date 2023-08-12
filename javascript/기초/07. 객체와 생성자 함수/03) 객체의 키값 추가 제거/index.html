@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    var aboutMe = {
+      name : '이선우',
+      age : '29',
+      height : '174',
+      weight : '72'
+    }
+    // 객체 전체
+    console.log(aboutMe);
+    // 객체 내 키이름과 키값 출력
+    console.log(aboutMe.name);
+    console.log(aboutMe['age']);
+
+    // 객체 내 키이름과 키값 추가하고 출력
+    aboutMe.hobby = 'guitar';
+    aboutMe['location'] = '남양주';
+    console.log(aboutMe);
+
+    // 객체 내 키이름과 키값 제거하고 출력
+    delete aboutMe.age;
+    console.log(aboutMe);
+  </script>
+</body>
+</html>

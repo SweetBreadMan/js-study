@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    /* 
+    substr(시작 인덱스 번호, 몇 개까지) 
+    문자열 내에 특정 인덱스 번호부터 몇 개의 문자를 반환
+    */
+
+    var firstInput = prompt('주민번호 앞자리 6자리 입력');
+    var firstNum = firstInput.length;
+    var birthMonth = firstInput.substr(2, 2);
+    var birthDay = firstInput.substr(4, 2);
+
+    if(firstNum == 6) {
+      alert(`고객님의 생일은 ${birthMonth}월 ${birthDay}일 입니다.`);
+    } else {
+      alert('숫자 6자리를 입력해주세요')
+    }
+  </script>
+</body>
+</html>

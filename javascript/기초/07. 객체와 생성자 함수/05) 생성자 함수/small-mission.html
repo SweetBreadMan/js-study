@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    function Product(title, price, delivery) {
+      this.title = title;
+      this.price = price;
+      this.delivery = delivery;
+      // 변하지 않는 공통 부분
+      amount = 1;
+      this.showInfo = function(){
+        // toLocaleString() 메서드로 기본값이 미국으로 설정 되어있어 1,000단위 표기법 원화에도 적용
+        console.log(`${title} ${amount}개의 가격은 ${price.toLocaleString()}이고 배송은 ${delivery}입니다.`);
+      }
+    }
+
+    var item1 = new Product('키보드', 22000, '로켓배송');
+
+    // 객체 호출
+    item1.showInfo();
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 자바스크립트에서 문자열을 표현하는 형태
+    // 변수식 선언 방식
+    var user = 'Andrew';
+
+    var html = '<h1 class="heading">This is H1 Headline</h1>';
+
+    var char = "It's time. 10 o'clock.";
+
+    var msg = `${user}님 안녕하세요`;
+
+    var plus = `10 + 10 = ${10+10}`;
+
+    document.write(msg);
+    console.log(msg);
+    // typeof() 괄호 안의 데이터 유형이 숫자인지 문자열인지, boolean 값인지 체크하는 메서드
+    console.log(typeof(msg));
+    document.write('<br><br>')
+    // 생성자 함수식 선언 방식
+    var str = new String('Hello');
+
+    document.write(str);
+    console.log(str);
+    // 생성자 함수 선언 방식은 object로 출력됨
+    console.log(typeof(str));
+
+  </script>
+</body>
+</html>

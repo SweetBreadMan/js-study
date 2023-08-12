@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    function Score(name, graphic, design, internet) {
+      this.name = name;
+      this.graphic = graphic;
+      this.design = design;
+      this.internet = internet;
+    }
+
+    Score.prototype.result = function avg() {
+      // toFixed는 소수점 자리 처리 메서드
+      return '학생 이름 : ' + this.name + ' / ' + '평균 : ' + ((this.graphic + this.design + this.internet)/3).toFixed(1)
+    }
+  </script>
+</body>
+</html>

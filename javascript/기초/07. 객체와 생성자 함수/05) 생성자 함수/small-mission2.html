@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 공통 항목. 변경 사항이 없으므로 생성자 함수에 넣지 않고 전역 변수 선언
+    var provider = '인프런';
+    var division = '웹 개발 분야';
+
+    // 생성자 함수 선언
+    function Teacher(name, subject, trainee) {
+      this.name = name;
+      this.subject = subject;
+      this.trainee = trainee;
+      this.teach = function() {
+        console.log(`- ${provider} ${division} - 
+        ${this.name}님의 ${this.subject} 강의의 수강생 수는 ${trainee}명 입니다.`);
+      }
+    }
+
+    var lecture1 = new Teacher('지식공유자', '퍼블리싱 기초', 355);
+    lecture1.teach();
+  </script>
+</body>
+</html>

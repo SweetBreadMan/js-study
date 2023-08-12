@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    function userData(name, age, height, weight) {
+      return {
+        name,
+        age,
+        height,
+        weight
+      }
+    }
+
+    var jamesData = userData('james', 30, 180, 70);
+    console.log(jamesData);
+    console.log(jamesData['age']);
+
+  </script>
+</body>
+</html>

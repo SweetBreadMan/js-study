@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // method에 해당 객체를 의미하는 this 키워드를 사용한다.
+    var aboutMe = {
+      name : '이선우',
+      age : '29',
+      height: 174,
+      hobby : '기타연주',
+      introduce : function(){
+        console.log(`저는 ${this.name}고 나이는 ${this.age}살이며 키는 ${this.height}cm이고 취미는 ${this.hobby}입니다.`)
+      }
+    }
+    aboutMe.introduce();
+  </script>
+</body>
+</html>

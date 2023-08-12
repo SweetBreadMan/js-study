@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+
+    // 공통적으로 사용할 함수를 만들어서 사용
+    function welcomeMsg(){
+      console.log(`반갑습니다. ${this.name}님`);
+    }
+
+    var userMale = {
+      name: 'andrew',
+      welcomeMsg: welcomeMsg
+    }
+
+    var userFemale = {
+      name: 'amy',
+      welcomeMsg: welcomeMsg
+    }
+    
+    userMale.welcomeMsg();
+    userFemale.welcomeMsg();
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button value="trim1" onclick="trimPreview(this.value)">LT 스페셜</button>
+  <button value="trim2" onclick="trimPreview(this.value)">프리미어 스페셜</button>
+  
+  <script>
+    // 생성자 함수 만들기
+    function OrderMalibu(grade, price, wheel, sunroof) {
+      // 해당 모델을 주문할 때 고객의 선택에 의해 변경될 항목
+      this.grade = grade;
+      this.price = price;
+      this.wheel = wheel;
+      this.sunroof = sunroof;
+    }
+
+    // 해당 모델이 가지고 있는 공통 항목
+    // 메모리 효율을 줄이기 위해 공통된 부분을 prototype 키워드로 빼서 모아둔다
+    OrderMalibu.prototype.model = 'Malibu 2.0';
+    OrderMalibu.prototype.fuel = '가솔린';
+    OrderMalibu.prototype.engine = '직렬 4기통';
+    OrderMalibu.prototype.efficiency = 10.8;
+
+    // 선택한 세부사항 미리보기 메서드
+    OrderMalibu.prototype.result = function() {
+      // 공통 항목
+      console.log('공통 사항\n' + this.model + ', ' + this.fuel + ', ' + this.engine + ', ' + this.efficiency);
+      // 선택 항목
+      console.log('선택 사항\n' + this.grade + ', ' + this.price + ', ' + this.wheel + ', ' + this.sunroof);
+    }
+
+    console.log(OrderMalibu.prototype);
+
+    var trim1 = new OrderMalibu('LT 스페셜', '3,000만원', '16인치', '없음');
+    var trim2 = new OrderMalibu('프리미어 스페셜', '4,000만원', '17인치', '수동 썬루프');
+    // trim1.result();
+
+    function trimPreview(e) {
+      if(e == 'trim1') {
+        trim1.result();
+      } else if(e == 'trim2'){
+        trim2.result();
+      }
+    }
+  </script>
+</body>
+</html>

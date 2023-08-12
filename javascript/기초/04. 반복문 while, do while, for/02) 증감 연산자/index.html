@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+    // 변수++ : 기존 변수에 1씩 증가시키고 다음 줄부터 실행
+    // ++변수 : 기존 변수에 1씩 증가시키고 해당 줄부터 실행
+    // 변수-- : 기존 변수에 1씩 감소시키고 다음 줄부터 실행
+    // --변수 : 기존 변수에 1씩 감소시키고 해당 줄부터 실행
+
+    var num = 100;
+    // 증감 연산자가 앞에 있는 경우 바로 실행해서 101
+    console.log(++num);
+
+    var num2 = 200;
+    // 증감 연산자가 뒤에 있는 경우 다음 줄에 실행해서 200
+    console.log(num2++);
+    // 이런 식으로 한번더 호출해야함
+    console.log(num2);
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+
+    /* 
+      var 객체이름 = {
+        키이름 : 키값,
+        키이름 : 키값
+      }
+    */
+
+    // 자동차의 정보와 작동을 예시로 속성과 메서드 구분
+
+    // 속성(properties) : 객체가 가지고 있는 고유한 특징을 기술한 것(함수가 아닌 것들)
+    // 메서드(Method) : 객체가 가지고 있는 동작 또는 객체에 주는 명령(대표적으로 함수)
+
+    var car = {
+      // 속성
+      name: '쉐보레 말리부',
+      fuel: '가솔린',
+      efficiency: 14.2,
+      color: ['red', 'green', 'blue'],
+      // 메서드
+      starting: function(e){
+        if(e == 'on') {
+          alert('시동이 켜져 있습니다.');
+        } else if(e == 'off'){
+          alert('시동이 꺼져 있습니다.');
+        }
+      }
+    }
+
+    // 메서드 호출 : 객체이름.메서드이름()
+    car.starting('off');
+
+    console.log(car.name);
+    console.log(car.color);
+    console.log(car.color[0]);
+    console.log(car.color[1]);
+
+    // 객체 안에 객체를 포함시키는 것도 가능
+    var student = {
+      mike : {
+        gender : 'male',
+        age : 16,
+        cute : false
+      },
+      amy : {
+        genter : 'female',
+        age : 15,
+        cute : true
+      }
+    }
+    console.log(student.mike.age);
+    console.log(student.amy.cute);
+  </script>
+</body>
+</html>

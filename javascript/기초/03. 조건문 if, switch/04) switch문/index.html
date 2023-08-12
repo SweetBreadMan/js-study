@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+    var birthNum = prompt('주민번호 뒷자리 입력');
+
+    switch(birthNum) {
+      case '1':
+      case '3':
+        alert('남자');
+        // break를 만나면 switch문을 빠져나옴
+        break;
+      case '2':
+      case '4':
+          alert('여자');
+          break;
+      default:
+          alert('1~4사이의 정수를 입력하세요.')
+    }
+  </script>
+</body>
+</html>

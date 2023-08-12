@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+    var test1 = 20 > 10;
+    var test2 = 20 < 10;
+    var test3 = 20 == 10;
+    
+    // 논리곱연산자 : &&
+    // 모든 조건을 만족하면 true, 하나라도 불만족이라면 false 출력;
+    console.log(test1 && test2 && test3);
+
+    // 논리합연산자 : ||
+    // 하나의 조건만 만족해도 true 출력
+    console.log(test1 || test2 || test3);
+
+
+    // 논리곱연산자를 이요한 과락 체크 예제
+    var mathScore = prompt('수학점수');
+    var engScore = prompt('영어점수');
+    var korScore = prompt('국어점수');
+
+    if(mathScore >= 60 && engScore >= 60 && korScore >= 60) {
+      alert('합격입니다.');
+    } else {
+      alert('불합격입니다.');
+    }
+
+    // 논리합연산자를 이용한 성별체크
+    var birthNum = prompt('주민 뒷자리 입력');
+    if(birthNum == 1 || birthNum == 3) {
+      alert('남자');
+    } else if(birthNum == 2 || birthNum == 4){
+      alert('여자');
+    } else {
+      alert('1~4사이의 정수를 입력해주세요.');
+    }
+  </script>
+</body>
+</html>

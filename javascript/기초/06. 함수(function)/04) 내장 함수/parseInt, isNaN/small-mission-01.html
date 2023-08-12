@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    
+    var exchangeRate = 1247;
+
+    var dollar = prompt('환율을 계산할 달러를 입력');
+
+    if(isNaN(dollar)) {
+      alert('정수로 입력해 주세요.');
+    } else {
+      alert('환전 금액은 ' + (dollar * exchangeRate) + '원 입니다.');
+    }
+  </script>
+</body>
+</html>

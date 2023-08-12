@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    /* 생성자 함수는 비슷한 객체를 여러개 만들어야 하는 경우에 사용함 */
+
+    /* 
+    아래와 같이 고객의 정보를 담은 객체는 한두개가 아닌 여러개일 경우가 많은데 이와 같이 재사용이 필요한 경우에 생성자 함수로 만들어 준다.
+    var userData = {
+      name: '홍길동',
+      age: 35,
+      userId: 'hong123'm
+      userPw: '12345',
+      joinDay: '2022-10-31'
+    }
+    */
+
+    // 생성자 함수의 이름은 첫 글자를 대문자로
+    function User(name, age, userId, userPw, joinDay) {
+      this.name = name;
+      this.age = age;
+      this.userId = userId;
+      this.userPw = userPw;
+      this.joinDay = joinDay;
+    }
+
+    var user1 = new User('홍길동', 20, 'hong', '12222', '2023-01-08');
+
+    console.log(user1);
+  </script>
+</body>
+</html>

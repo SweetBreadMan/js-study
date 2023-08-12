@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    /* 리턴(return) 키워드는 2가지 경우에 사용되는데, 첫번째는 매개 변수 값을 새롭게 반환하라는 의미로 사용, 두번째는 함수내 코드 블록을 벗어나라는 의미로 사용됨 */
+    
+    /* function plus(x,y) {
+      return x + y;
+    } */
+
+    function square(e) {
+      // return 다음 줄 코드는 실행되지 않고 함수를 빠져나옴
+      return e * e;
+    }
+
+    var sum = prompt('제곱을 구할 값 입력');
+
+    alert(square(sum));
+  </script>
+</body>
+</html>

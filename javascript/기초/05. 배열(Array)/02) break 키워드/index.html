@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    /* break 키워드로 반복문 벗어나기 */
+
+    for(i = 1; true; i++) {
+      var userConfirm = confirm('반복하쉴?');
+
+      if(userConfirm) {
+        alert(i + '번째 반복입니다.');
+      } else {
+        break;
+      }
+    }
+  </script>
+</body>
+</html>

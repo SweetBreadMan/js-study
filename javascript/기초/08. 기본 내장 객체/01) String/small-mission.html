@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // String 객체의 속성 length
+    var userPw = prompt('사용할 비밀번호를 8~12자리 입력해주세요');
+
+    if(userPw.length >= 8 && userPw.length <= 12) {
+      alert('사용할 수 있는 비밀번호 입니다.');
+    } else {
+      alert('비밀번호는 8~12자리로 입력해주세요.');
+    }
+  </script>
+</body>
+</html>

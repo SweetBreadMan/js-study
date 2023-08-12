@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // charAt() 괄호 안에 인덱스 번호의 문자열을 반환
+    var inputDigit = prompt('주민번호 7자리 입력');
+    var residentAfterNum = inputDigit.charAt(6);
+
+    if(residentAfterNum == 1 || residentAfterNum == 3) { 
+      alert('남자');
+    } else if(residentAfterNum == 2 || residentAfterNum == 4) {
+      alert('여자');
+    } else {
+      alert('다시 입력해주세요');
+    }
+  </script>
+</body>
+</html>

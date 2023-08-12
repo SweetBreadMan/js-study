@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    // 매개 변수에 기본값을 넣어두면 매개 변수가 없어도 고객님이라는 문자열은 출력됨
+    function userGreeting(name = '고객님') {
+      var msg = '반갑습니다.';
+      if(name) {
+        msg += ` ${name}`;
+      }
+      console.log(msg);
+    }
+
+    userGreeting();
+    userGreeting('andrew');
+  </script>
+</body>
+</html>
